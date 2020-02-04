@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const votesSchema = new Schema({
+const issuesSchema = new Schema({
     title: {
         type: String,
         required: true
@@ -23,4 +23,4 @@ const votesSchema = new Schema({
     }
 })
 
-module.exports = mongoose.model("Issues", votesSchema)
+module.exports = mongoose.model("Issues", issuesSchema)
